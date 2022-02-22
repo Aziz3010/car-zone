@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Now</title>
+    <title>Compare</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,7 @@
     <!-- Font Awesome CSS File -->
     <link rel="stylesheet" href="./css/all.min.css">
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="./css/book.css">
+    <link rel="stylesheet" href="./css/compare.css">
 </head>
 
 <body>
@@ -34,9 +34,9 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">New Car</a></li>
                     <li><a href="#">Old Car</a></li>
-                    <li><a href="#">Compare</a></li>
+                    <li><a href="#" class="active">Compare</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#" class="active">Book now</a></li>
+                    <li><a href="#">Book now</a></li>
                     <li><a href="#">News</a></li>
                 </ul>
             </div>
@@ -61,61 +61,88 @@
     <div class="Top-title">
         <div class="layout">
             <div class="caption">
-                <h1>Book now</h1>
+                <h1>Compare</h1>
             </div>
         </div>
     </div>
     <!-- End Top Title -->
 
+    <!-- path -->
+    <div class="container">
+        <div class="path">
+            <span>Home</span>
+            <span>></span>
+            <span>Compare</span>
+        </div>
+    </div>
+
     <!-- Start Form -->
-    <section class="book">
+    <section class="compare">
         <div class="container">
-            <!-- path -->
-            <div class="path">
-                <span>Home</span>
-                <span>></span>
-                <span>Book</span>
+
+            <div class="top-caption">
+                <h2>Compare</h2>
+                <p>Choose Your Awesome Car !</p>
             </div>
 
-            <!-- form -->
-            <form>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="form-box">
+                        <h3>First Car</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="Brand">Brand</label>
+                                <input type="text" class="form-control" id="Brand">
+                            </div>
 
-                <h2>Book now</h2>
+                            <div class="form-group">
+                                <label for="Model">Model</label>
+                                <input type="text" class="form-control" id="Model">
+                            </div>
 
-                <div class="form-group">
-                    <label for="Brand">Brand</label>
-                    <input type="text" class="form-control" id="Brand">
+                            <div class="form-group">
+                                <label for="Class">Class</label>
+                                <input type="text" class="form-control" id="Class">
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="Model">Model</label>
-                    <input type="text" class="form-control" id="Model">
+                <div class="col-lg-2">
+                    <div class="vs">
+                        <div class="box">
+                            <span>vs</span>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="Class">Class</label>
-                    <input type="text" class="form-control" id="Class">
+                <div class="col-lg-5">
+                    <div class="form-box">
+                        <h3>Second Car</h3>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="Brand">Brand</label>
+                                <input type="text" class="form-control" id="Brand">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Model">Model</label>
+                                <input type="text" class="form-control" id="Model">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Class">Class</label>
+                                <input type="text" class="form-control" id="Class">
+                            </div>
+                        </form>
+                    </div>
                 </div>
+            </div>
 
-                <div class="form-group">
-                    <label for="Name">Name</label>
-                    <input type="text" class="form-control" id="Name">
-                </div>
+            <div class="btn-box">
+                <button type="submit" class="btn btn-primary">Compare</button>
+            </div>
 
-                <div class="form-group">
-                    <label for="Email">E-mail</label>
-                    <input type="Email" class="form-control" id="Email">
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone</label>
-                    <input type="number" class="form-control" id="phone">
-                </div>
-
-
-                <button type="submit" class="btn btn-primary">Send</button>
-
-            </form>
         </div>
     </section>
     <!-- End Form -->
