@@ -16,8 +16,10 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <!-- Font Awesome CSS File -->
     <link rel="stylesheet" href="./css/all.min.css">
-    <!-- Main CSS File -->
+    <!-- Custom CSS File -->
     <link rel="stylesheet" href="./css/compare.css">
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -27,6 +29,12 @@
             <!-- logo -->
             <div class="logo-box">
                 <img src="./images/Group 319.png" alt="car zone">
+
+                <div id="burger-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
             <!-- links -->
             <div class="my-links">
@@ -34,25 +42,32 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#">New Car</a></li>
                     <li><a href="#">Old Car</a></li>
-                    <li><a href="#" class="active">Compare</a></li>
+                    <li><a href="#">Compare</a></li>
                     <li><a href="#">Services</a></li>
-                    <li><a href="#">Book now</a></li>
+                    <li><a href="#" class="active">Book now</a></li>
                     <li><a href="#">News</a></li>
+
+                    <!-- search -->
+                    <li>
+                        <div class="search-box">
+                            <form class="form-inline">
+                                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                        </div>
+                    </li>
+
+                    <!-- login/signup -->
+                    <li>
+                        <div class="anchor-box">
+                            <a href="#">Sign Up</a>
+                            <span>/</span>
+                            <a href="#" class="active">Login</a>
+                        </div>
+                    </li>
+
                 </ul>
             </div>
-            <!-- search -->
-            <div class="search-box">
-                <!-- <input type="search"> -->
-                <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
-            </div>
-            <!-- login/signup -->
-            <div class="anchor-box">
-                <a href="#">Sign Up</a>
-                <span>/</span>
-                <a href="#" class="active">Login</a>
-            </div>
+
         </div>
     </div>
     <!-- End Navbar -->
@@ -68,7 +83,7 @@
     <!-- End Top Title -->
 
     <!-- path -->
-    <div class="container">
+    <div class="container mt-4">
         <div class="path">
             <span>Home</span>
             <span>></span>
@@ -168,7 +183,7 @@
             <div class="middle">
                 <div class="row">
                     <!-- 1 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="box">
                             <h3>Help</h3>
                             <ul>
@@ -185,7 +200,7 @@
                         </div>
                     </div>
                     <!-- 2 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="box">
                             <h3>Services</h3>
                             <ul>
@@ -205,7 +220,7 @@
                         </div>
                     </div>
                     <!-- 3 -->
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="box">
                             <h3>Tags</h3>
                             <ul>
