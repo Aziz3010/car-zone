@@ -1,0 +1,63 @@
+/* Start Global in all pages */
+/* Start Top-title */
+.Top-title {
+    background-color: red;
+    height: 200px;
+}
+
+.Top-title .layout {
+    background-color: rgba(112, 177, 233, 0.301);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Top-title .layout .caption h1 {
+    color: var(--third-font-color);
+    margin: 0;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.Top-title .layout .caption h1::before,
+.Top-title .layout .caption h1::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    background-color: var(--main-bg-color);
+    width: 70px;
+    bottom: 0;
+}
+
+.Top-title .layout .caption h1::before {
+    left: 0;
+}
+
+.Top-title .layout .caption h1::after {
+    right: 0;
+}
+
+/* End Top-title */
+
+/* Start path */
+.path {
+    width: 100%;
+    background-color: var(--second-bg-color);
+    padding: 8px 15px;
+    border-radius: 3px;
+}
+
+.path span {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.path span:first-child {
+    color: var(--active-font-color);
+}
+
+/* End path */
+
+/* End Global in all pages */
