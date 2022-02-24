@@ -156,6 +156,11 @@ body {
 
 .my-navbar .my-links {
     display: block;
+    transition: top 1s;
+}
+
+.on {
+    top: 45px !important;
 }
 
 .my-navbar .my-links ul {
@@ -280,9 +285,9 @@ body {
     
     .my-navbar .my-links {
         position: absolute;
-        display: none;
+        display: block;
         background-color: #fff;
-        top: 45px;
+        top: -430px;
         right: 15px;
         width: 50%;
     }
@@ -310,11 +315,6 @@ body {
 }
 
 /* End navbarz */
-
-
-
-
-
 
 
 /* +++++++++++++++++++ Footer +++++++++++++++++++ */

@@ -1,13 +1,3 @@
-:root {
-    --main-bg-color: #fff;
-    --second-bg-color: #f5f5f5;
-    
-    --main-font-color: #000;
-    --second-font-color: #070707;
-    --third-font-color: #fff;
-    --active-font-color: #06A5F4;
-}
-
 .home {
     padding: 50px 0 3rem 0;
 }
@@ -28,7 +18,6 @@
     width: 100%;
     height: 100%;
     border-radius: 8px;
-    /* border: 1px solid #707070; */
 }
 
 .home .landing .back .caption {
@@ -63,6 +52,24 @@
     font-weight: 600;
     line-height: 1.3;
 }
+
+@media screen and (max-width: 576px) {
+    .home .landing .back {
+        background-image: none;
+        border: 1px solid #707070;
+    }
+    
+    .home .landing .back .caption {
+        width: 100%;
+        align-items: center;
+        margin-left: 0rem;
+    }
+
+    .home .landing .back .caption p:nth-child(3) {
+        text-align: center;
+    }
+}
+
 
 /* drop down */
 .home .drop-down {
@@ -343,10 +350,6 @@
 }
 
 /* box-left */
-/* .home .container .row#last-row .content-box-left {
-    background-color: #06A5F4;
-} */
-
 .home .container .row#last-row .content-box-left .top-part {
     background-color: #f5f5f5;
     padding: 2.5rem 1rem;
@@ -397,22 +400,6 @@
     width: 100%;
     height: 100%;
 }
-
-/* @media screen and (max-width: 991px) {
-    .home .container .row#last-row .content-box-left .top-part {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content-box-left .top-part .image {
-        position: relative;
-        width: 100%;
-        top: 0;
-        right: 0;
-    }
-} */
-
 
 /* 0000000000000000000000000000 */
 .content-box-left .bottom-part {
@@ -469,21 +456,126 @@
     right: 30px;
 }
 
+.content-box-left .bottom-part .box#Oil .image {
+    height: 140px;
+    position: absolute;
+    bottom: 30px;
+    right: 80px;
+}
+
+
 .content-box-left .bottom-part .box .image img{
     height: 100%;
 }
 
 
 
+@media screen and (max-width: 1200px) {
+    .home .container .row#last-row .content-box-left .top-part {
+        padding: 2rem 1rem;
+    }
 
+    .content-box-left .bottom-part .box {
+        padding: 3rem 2rem;
+        margin: 1rem 0 0 0;
+    }
 
+    .content-box-left .bottom-part .box#Oil .image {
+        bottom: 10px;
+        right: 30px;
+    }
 
+    .content-box-left .bottom-part .box#lights .image {
+        height: 100px;
+        bottom: 30px;
+    }
+}
 
+@media screen and (max-width: 991px) {
+    .home .container .row#last-row .content-box-left {
+        margin-bottom: 2rem;
+    }
 
+    .home .container .row#last-row .content-box-left .top-part {
+        padding: 3rem 1rem;
+    }
 
+    .content-box-left .bottom-part .box {
+        margin: 2rem 0 0 0;
+    }
 
+    .content-box-left .bottom-part .box#Oil .image {
+        height: 150px;
+        bottom: 20px;
+        right: 80px;
+    }
 
+    .content-box-left .bottom-part .box#lights .image {
+        height: 110px;
+        bottom: 30px;
+        right: 60px;
+    }
+}
 
+@media screen and (max-width: 767px) {
+    .content-box-left .bottom-part {
+        flex-direction: column;
+    }
+
+    .content-box-left .bottom-part .box {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .content-box-left .bottom-part .box#Oil .image {
+        height: 200px;
+        bottom: 10px;
+        right: 110px;
+    }
+
+    .content-box-left .bottom-part .box#lights .image {
+        height: 150px;
+        bottom: 30px;
+        right: 70px;
+    }
+}
+
+@media screen and (max-width: 444px) {
+    .home .container .row#last-row .content-box-left .top-part {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home .container .row#last-row .content-box-left .top-part .info {
+        padding-left: 0rem;
+    }
+
+    .content-box-left .top-part .image {
+        height: 120px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .content-box-left .bottom-part .box#lights .image {
+        height: 150px;
+        bottom: 15px;
+        right: 70px;
+    }
+}
+
+@media screen and (max-width: 422px) {
+    .home .container .row#last-row .content-box-left .top-part {
+        flex-direction: column;
+        padding: 2rem 0rem;
+    }
+
+    .home .container .row#last-row .content-box-left .top-part .info {
+        width: 100%;
+        text-align: center;
+    }
+}
 
 
 
